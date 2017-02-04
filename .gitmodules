@@ -1,0 +1,15 @@
+[submodule "legal"]
+	path = legal
+	url = https://github.com/georgebina/legal
+[submodule "jteiPlus"]
+	path = jteiPlus
+	url = https://github.com/georgebina/jteiPlus
+[submodule "sampleFrameworkExtension"]
+	path = sampleFrameworkExtension
+	url = https://github.com/georgebina/sampleFrameworkExtension
+[submodule "languageBook"]
+	path = languageBook
+	url = https://github.com/oxygenxml/languageBook
+[submodule "dim"]
+	path = dim
+	url = https://github.com/georgebina/dim
