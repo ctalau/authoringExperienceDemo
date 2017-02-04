@@ -1,6 +1,21 @@
 # Authoring Experience Demos
 
-This project aggregates various oXygen frameworks that provide an enhanced authoring experience for various document types.
+This project aggregates various oXygen XML Editor frameworks that provide an enhanced authoring experience for various document types.
+
+
+## Getting Started
+
+At the end of this document there is a list of frameworks with links to sample files.
+
+To open the sample files in **oXygen XML Editor** (v18.1+), you need to open this 
+`README.md` file in the editor and follow the links.
+
+To open them in **oXygen XML Web Author**, the simplest way is to install the 
+[**Web Author Test Server Add-on**](https://www.oxygenxml.com/oxygen_webapp_add_on.html) 
+(you will need an SDK account for that), open sample files in **oXygen XML Editor** 
+and use the add-on to open the files in **Web Author**.
+
+## Frameworks List
 
 - [**DITA Plus**](sampleFrameworkExtension/) 
  
