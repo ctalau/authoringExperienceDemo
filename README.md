@@ -29,7 +29,7 @@ and use the add-on to open the files in **Web Author**.
 
 - [**Framework for a book**](languageBook/)
   
-  This is a framework that could be used to write the "Language book".
+  Sample oXygen XML Editor framework for managing content of a book similar to "The Language of Content Strategy" book by Scott Abel and Rahel Anne Bailie.
   
   [Sample document](languageBook/example/TheLanguageOfContentStrategy.xml)
   
