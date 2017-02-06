@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<?xml-model href="minikube.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<topic id="topic_zzx_wf5_vy">
+  <title>Quickstart</title>
+  <body>
+    <p>The "minikube start" command should be called with the appropriate flag if you want to change
+            the VM driver. Minikube Supports the following drivers:</p>
+    <ul id="ul_lb5_xf5_vy">
+      <li>virtualbox</li>
+      <li>vmwarefusion</li>
+      <li>kvm (<xref href="https://github.com/kubernetes/minikube/blob/master/DRIVERS.md#kvm-driver"
+          format="html" scope="external">driver installation</xref>)</li>
+      <li>xhyve (<xref
+          href="https://github.com/kubernetes/minikube/blob/master/DRIVERS.md#xhyve-driver"
+          format="html" scope="external">driver installation</xref>)</li>
+    </ul>
+    <p>Note that the IP below is dynamic and can change. It can be retrieved with <codeph>minikube
+        ip</codeph>.</p>
+    <codeblock>$ minikube start
+Starting local Kubernetes cluster...
+Running pre-create checks...
+Creating machine...
+Starting local Kubernetes cluster...</codeblock>
+    <codeblock>$ kubectl run hello-minikube --image=gcr.io/google_containers/echoserver:1.4 --port=8080
+deployment "hello-minikube" created</codeblock>
+    <codeblock>$ kubectl expose deployment hello-minikube --type=NodePort
+service "hello-minikube" exposed
+
+# We have now launched an echoserver pod but we have to wait until the pod is up before curling/accessing it# via the exposed service.# To check whether the pod is up and running we can use the following:$ kubectl get pod
+NAME                              READY     STATUS              RESTARTS   AGE
+hello-minikube-3383150820-vctvh   1/1       ContainerCreating   0          3s
+# We can see that the pod is still being created from the ContainerCreating status$ kubectl get pod
+NAME                              READY     STATUS    RESTARTS   AGE
+hello-minikube-3383150820-vctvh   1/1       Running   0          13s
+# We can see that the pod is now Running and we will now be able to curl it:$ curl $(minikube service hello-minikube --url)
+CLIENT VALUES:
+client_address=192.168.99.1
+command=GET
+real path=/
+...</codeblock>
+    <codeblock>$ minikube stop
+Stopping local Kubernetes cluster...
+Stopping "minikube"...</codeblock>
+  </body>
+</topic>

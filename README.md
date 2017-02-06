@@ -48,7 +48,9 @@ and use the add-on to open the files in **Web Author**.
 - **Schematron and one-click fixes**
 
   Schematron is a very powerfull XML validation language in which you can express various conventions to which the content must adhere.
-
+  
+  [Example of enforcing styleguide for an open-source project documentation](samples/kubernetes/README.md).
+  
 - [**Dynamic Information Model (DIM)**](dim/)
 
   The Dynamic Information model is a DITA specialization for writing styleguides. The topics also contain business rules defined in a simple format that gets translated to Schematron.
