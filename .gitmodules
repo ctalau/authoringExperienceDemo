@@ -13,3 +13,6 @@
 [submodule "dim"]
 	path = dim
 	url = https://github.com/georgebina/dim
+[submodule "ditaMark"]
+	path = ditaMark
+	url = https://github.com/oxygenxml/ditaMark

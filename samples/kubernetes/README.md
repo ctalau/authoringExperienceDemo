@@ -10,6 +10,7 @@ for code written in documentation:
 - Don’t include the command prompt
 - Separate commands from output
 
-However, some topics do not adhere to it. We extracted a small sample [here](minikube.dita). 
+However, some topics do not adhere to it. We extracted a small sample [here](minikube.dita)
+([the original topic](https://kubernetes.io/docs/getting-started-guides/minikube/)). 
 You can open it to see how Schematron discovers on the fly when a topic does not adhere to styleguide
 and proposes solutions for each of the problems.

@@ -59,5 +59,11 @@ and use the add-on to open the files in **Web Author**.
   - [Sample topic 2](dim/test/avoidSemicolumnInListItems/testTopic.dita)
   - [Sample topic 3](dim/test/avoidWordInElement/testTopic.dita)
 
+- [**Markdown 2 DITA**](ditaMark/) 
+
+  Framework that provide inline conversion actions from Markdown syntax to DITA.
+  
+  [Open the corresponding project](ditaMark/ditaMark.xpr)
+
 
   
